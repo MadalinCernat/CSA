@@ -1,0 +1,30 @@
+A.
+add
+2
+first
+type
+registers, memory locations or constants
+
+inc
+one
+a memory location
+a decrease of the operand by 1
+in the operand
+0 - the operand
+
+B.
+mul
+specified
+binary
+8, 16
+32 bits
+
+operand
+AL
+AX
+EAX
+EAX and EDX
+trigger an error
+
+C.
+DB, DW, DD, DQ

@@ -1,0 +1,154 @@
+
+\documentclass{article} 
+
+\usepackage{geometry} 
+\usepackage{amsmath} 
+\usepackage{graphicx} 
+\usepackage{xlop}
+
+\newcommand{\question}[2][]{\begin{flushleft}
+        \textbf{Question #1}: \textit{#2}
+
+
+\end{flushleft}}
+
+\newcommand{\sol}{\textbf{Solution}:} 
+\newcommand{\maketitletwo}[2][]{\begin{center}
+        \Large{\textbf{Homework 1}
+            
+            CSA}
+        \vspace{5pt}
+        
+        \normalsize{Mădălin Cernat
+        
+        \today}     
+        \vspace{15pt}
+        
+\end{center}}
+
+\begin{document}
+    \maketitletwo[5]
+    
+    	\question[1]{Convert the following numbers from base 10 to 2 and then to 16:} 
+	\begin{gather*}
+	  4_{(10)} \implies  0100_{(2)} \implies 4_{(16)}\\
+	  10_{(10)} = 8 + 2 = 2^3 + 2^1 \implies 1010_{(2)} \implies A_{(16)}\\
+	  15_{(10)} = 8 + 4 + 2 + 1 = 2^3 + 2^2 + 2^1 + 2^0 \implies 1111_{(2)} \implies F_{(16)}\\
+	  32_{(10)} = 2^5 \implies 0010\ 0000_{(2)} \implies 20_{(16)}
+	\end{gather*}
+    
+    	\question[2]{Convert the following numbers from base 10 to 16 and then to 2:}
+   	\begin{gather*}
+		3_{(10)} \implies 3_{(16)} \implies 0011_{(2)}\\
+		11_{(10)} \implies B_{(16)} \implies 1011_{(2)}\\
+		16_{(10)} \implies 10_{(16)} \implies 10000_{(2)}\\
+		17_{(10)} \implies 11_{(16)} \implies 10001_{(2)}\\
+	\end{gather*}
+    
+    	\question[3]{Convert the following numbers from base 2 to 16:}
+	\begin{gather*}
+		1010_{(2)} \implies A_{(16)}\\
+		0111_{(2)} \implies 7_{(16)}\\
+		1111_{(2)} \implies F_{(16)}\\
+		1000\ 1010_{(2)} \implies 8A_{(16)}\\
+		0001\ 1010\ 1111_{(2)} \implies 1AF_{(16)}\\
+	\end{gather*}
+	\newpage
+
+	\question[4]{Convert the following numbers from base 16 to 2:}
+	
+	\begin{gather*}
+		3_{(16)} \implies 0011_{(2)}\\
+		A_{(16)} \implies 1010_{(2)}\\
+		F_{(16)} \implies 15_{(10)} \implies 1111_{(2)}\\
+		2B_{(16)} \implies 0010\ 1011_{(2)}\\
+		2F8_{(16)} \implies 0010\ 1111\ 1000_{(2)}\\
+	\end{gather*}
+
+	\question[5]{Compute the following expressions directly in base 2 (without converting to base 10):}
+
+	\begin{gather*}
+		01_{(2)} + 01_{(2)} = 10_{(2)}\\
+		10_{(2)} + 10_{(2)} = 100_{(2)}\\
+		111_{(2)} + 001_{(2)} = 1000_{(2)}\\
+		1010_{(2)} + 0001_{(2)} =  1001_{(2)}\\
+		1000_{(2)} - 10_{(2)} = 0110_{(2)}\\
+	\end{gather*}	
+
+	\question[6]{Compute the following expressions directly in base 16 (without converting to base 10):}
+
+	\begin{gather*}
+		9_{(16)} + 1_{(16)} = A_{(16)}\\
+		B_{(16)} + 2_{(16)} = D_{(16)}\\
+		F_{(16)} + 1_{(16)} = 10_{(16)}\\
+		10_{(16)} + A_{(16)} = 1A_{(16)}\\
+		10_{(16)} - 2_{(16)} = E_{(16)}\\
+		B_{(16)} - 3_{(16)} = 8_{(16)}\\
+	\end{gather*}	
+
+	\question[7]{Check, using at least two of the complementary code rules, if:}
+		\begin{itemize}
+			\item 9A7D(16) and 7583(16) are complementary in a location of 2 bytes
+			\begin{equation*}
+				\begin{aligned}
+					&\left.\begin{aligned}
+						9A7D_{(16)} = 1001\ 1010\ 0111\ 1101_{(2)} \\
+						7583_{(16)} = 0111\ 0101\ 1000\ 0011_{(2)} \\ 
+					\end{aligned}\right\}\Rightarrow\text{They are \textbf{not complementary} in a location of 2 bytes.}
+				\end{aligned}
+			\end{equation*}
+			
+			\begin{equation*}
+				10000_{(16)} - 09A7D_{(16)} = 	6583_{(16)} \neq 7583_{(16)}
+			\end{equation*}
+
+				
+			\item 000F095D(16) and FFF0F6A3(16) are complementary in a location of 4 bytes
+			\begin{equation*}
+				10000000_{(16)} - 000F095D_{(16)} = 1FFF0F6A3_{(16)} 
+			\end{equation*}
+			So they are \textbf{complementary} in a location of 4 bytes.
+
+			\item 4BA1(16)  and 5C93(16) are complementary in a location of 2 bytes
+			\begin{equation*}
+				\begin{aligned}
+					&\left.\begin{aligned}
+						 4BA1_{(16)} = 0100\ 1011\ 1010\ 0001_{(2)} \\
+						 6C93_{(16)} = 0110\ 1100\ 1001\ 0011_{(2)} \\
+					\end{aligned}\right\}\Rightarrow\text{They are \textbf{not complementary} in a location of 2 bytes.}
+				\end{aligned}
+			\end{equation*}
+			
+			\item 7F(16) and 81(16) are complementary in a location of 1 byte
+			\begin{equation*}
+				7F_{(16)} = 0111\ 1111_{(2)} \\
+			\end{equation*}
+				We invert the bits starting at the first 1 from right to left, to obtain the complementary: \begin{equation*} 1000\ 0001_{(2)}. \end{equation*}
+			\begin{equation*}
+				1000\ 0001_{(2)} = 81_{(16)}
+			\end{equation*}
+				So the bytes are \textbf{complementary}.
+
+			\item 732A(16)  and 4E58(16) are complementary in a location of 2 bytes
+			\begin{equation*}
+				732A_{(16)} = 0111\ 0011\ 0010\ 1010_{(2)} \implies 1000\ 1100\ 1101\ 0110_{(2)} = 8CD6_{(16)} \neq 4E58_{(16)}
+			\end{equation*}
+		\end{itemize}
+
+
+
+	\question[8]{Write the 8-bits unsigned representation for the following numbers:}
+	\begin{gather*}
+		8_{(10)} = 0000\ 1000_{(2)} \\
+		67 = 2^6 + 2^1 + 2^0 = 0100\ 0011_{(2)} \\
+		230 = 2^7 + 2^6 + 2^5 + 2^2 + 2^1 = 1110\ 0110_{(2)} \\
+	\end{gather*}
+
+	\question[9]{Write the 16-bits signed representation for the following numbers:}
+	\begin{gather*}
+		6_{(10)} = 0000\ 0110_{(2)} \implies -6_{(2)} = 1111\ 1010_{(2)} \\
+		121_{(10)} = 0111\ 1001_{(2)} \implies -121_{(2)} = 1000\ 0111_{(2)} \\
+		70_{(10)} = 0100\ 0110_{(2)}
+	\end{gather*}
+
+\end{document}
