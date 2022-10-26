@@ -1,9 +1,5 @@
 bits 32 ; assembling for the 32 bits architecture
 
-; [(a-b)*5+d]-2*c (a,b,c - byte, d - word)
-
-
-
 ; declare the EntryPoint (a label defining the very first instruction of the program)
 global start        
 
@@ -22,6 +18,7 @@ segment data use32 class=data
 ; our code starts here
 segment code use32 class=code
     start:
+        ; [(a-b)*5+d]-2*c (a,b,c - byte, d - word)
         mov AL, [a]
         sub AL, [b] ; AL = a - b
         mov AH, 5
@@ -32,7 +29,7 @@ segment code use32 class=code
         
         mov CL, [c]
         mov AL, 2
-        mul CL ; AX = CL * AL = c * 2
+        mul CL ; AX = CL * AL = 2 * c
         
         sub BX, AX ; BX = [(a-b) * 5 + d] - 2 * c
        

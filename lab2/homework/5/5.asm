@@ -1,10 +1,5 @@
 bits 32 ; assembling for the 32 bits architecture
 
-; 100/(e+h-3*a)
-; a - byte
-; e, h - word
-
-
 ; declare the EntryPoint (a label defining the very first instruction of the program)
 global start        
 
@@ -15,7 +10,7 @@ import exit msvcrt.dll    ; exit is a function that ends the calling process. It
 
 ; our data is declared here (the variables needed by our program)
 segment data use32 class=data
-    a db 3
+    a db 4
     e dw 14
     h dw 5
 
@@ -23,11 +18,14 @@ segment data use32 class=data
 segment code use32 class=code
     start:
         ; 100/(e+h-3*a)
+        ; a - byte
+        ; e, h - word
+        
         mov BX, [e]
-        add BX, [h]
+        add BX, [h] ; BX = e + h
         
         mov AL, 3
-        mul byte [a] ; AX = 3*AL
+        mul byte [a] ; AX = 3 * a
         
         sub BX, AX ; BX = e + h - 3 * a 
         
