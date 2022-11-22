@@ -2,19 +2,21 @@
 <NotepadPlus>
     <FindHistory nbMaxFindHistoryPath="10" nbMaxFindHistoryFilter="10" nbMaxFindHistoryFind="10" nbMaxFindHistoryReplace="10" matchWord="no" matchCase="no" wrap="yes" directionDown="yes" fifRecuisive="yes" fifInHiddenFolder="no" dlgAlwaysVisible="no" fifFilterFollowsDoc="no" fifFolderFollowsDoc="no" searchMode="1" transparencyMode="1" transparency="150" dotMatchesNewline="no">
         <Filter name="" />
+        <Filter name="" />
         <Find name="\t" />
         <Replace name="    " />
     </FindHistory>
     <History nbMaxFile="10" inSubMenu="no" customLength="-1">
-        <File filename="D:\DOCS\UBB\ASC\asm_tools\npp\Plugins\Config\asm_template_ro_.asm" />
-        <File filename="D:\DOCS\UBB\ASC\examples\template_en.asm" />
-        <File filename="d:\DOCS\UBB\ASC\asm_tools\npp\Plugins\Config\asm_template.asm" />
-        <File filename="d:\DOCS\UBB\ASC\asm_tools\npp\Plugins\Config\asm_template_ro.asm" />
-        <File filename="D:\work\check\test.asm" />
-        <File filename="D:\DOCS\UBB\ASC\intrebari_TODOs.txt" />
-        <File filename="C:\Users\madal\OneDrive\Desktop\test.asm" />
-        <File filename="C:\Users\madal\OneDrive\Desktop\facultate\ASC\lab asc\lab2\homework\2\2.asm" />
-        <File filename="C:\Users\madal\OneDrive\Desktop\facultate\ASC\lab asc\lab2\homework\3\3.asm" />
+        <File filename="C:\Users\madal\OneDrive\Desktop\facultate\ASC\CSA\lab2\homework\2\2.asm" />
+        <File filename="C:\Users\madal\OneDrive\Desktop\facultate\ASC\CSA\lab2\homework\3\3.asm" />
+        <File filename="C:\Users\madal\OneDrive\Desktop\facultate\ASC\CSA\lab2\homework\4\4.asm" />
+        <File filename="C:\Users\madal\OneDrive\Desktop\facultate\ASC\CSA\lab2\homework\5\5.asm" />
+        <File filename="C:\Users\madal\OneDrive\Desktop\facultate\ASC\CSA\lab3\example.asm" />
+        <File filename="C:\Users\madal\OneDrive\Desktop\facultate\ASC\CSA\lab3\homework\1.asm" />
+        <File filename="C:\Users\madal\OneDrive\Desktop\facultate\ASC\CSA\lab3\homework\3.asm" />
+        <File filename="C:\Users\madal\OneDrive\Desktop\facultate\ASC\CSA\lab3\homework\3unsigned.asm" />
+        <File filename="C:\Users\madal\OneDrive\Desktop\facultate\ASC\CSA\lab3\homework\2.asm" />
+        <File filename="C:\Users\madal\OneDrive\Desktop\facultate\ASC\CSA\lab4\homework\bitwise-operations-hw.asm" />
     </History>
     <GUIConfigs>
         <GUIConfig name="ToolBar" visible="yes">standard</GUIConfig>
@@ -56,8 +58,8 @@
         <GUIConfig name="MISC" fileSwitcherWithoutExtColumn="no" backSlashIsEscapeCharacterForSql="yes" newStyleSaveDlg="no" isFolderDroppedOpenFiles="no" docPeekOnTab="no" docPeekOnMap="no" />
         <GUIConfig name="searchEngine" searchEngineChoice="2" searchEngineCustom="" />
         <GUIConfig name="SmartHighLight" matchCase="no" wholeWordOnly="yes" useFindSettings="no" onAnotherView="no">yes</GUIConfig>
-        <GUIConfig name="ScintillaPrimaryView" lineNumberMargin="show" bookMarkMargin="show" indentGuideLine="show" folderMarkStyle="box" lineWrapMethod="aligned" currentLineHilitingShow="show" scrollBeyondLastLine="no" disableAdvancedScrolling="no" wrapSymbolShow="hide" Wrap="yes" borderEdge="yes" edge="no" edgeNbColumn="80" zoom="4" zoom2="0" whiteSpaceShow="hide" eolShow="hide" borderWidth="2" smoothFont="no" />
-        <GUIConfig name="DockingManager" leftWidth="200" rightWidth="200" topHeight="200" bottomHeight="157">
+        <GUIConfig name="ScintillaPrimaryView" lineNumberMargin="show" bookMarkMargin="show" indentGuideLine="hide" folderMarkStyle="box" lineWrapMethod="aligned" currentLineHilitingShow="show" scrollBeyondLastLine="no" disableAdvancedScrolling="no" wrapSymbolShow="hide" Wrap="yes" borderEdge="yes" edge="no" edgeNbColumn="80" zoom="1" zoom2="0" whiteSpaceShow="hide" eolShow="hide" borderWidth="2" smoothFont="no" />
+        <GUIConfig name="DockingManager" leftWidth="200" rightWidth="200" topHeight="200" bottomHeight="80">
             <PluginDlg pluginName="AsmPlugin.dll" id="2" curr="3" prev="-1" isVisible="yes" />
             <ActiveTabs cont="0" activeTab="-1" />
             <ActiveTabs cont="1" activeTab="-1" />
